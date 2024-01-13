@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Montecarlo</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulación de Montecarlo</h1>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Valor</th>
+                    <th>Frecuencia</th>
+                    <th>Frecuencia Relativa</th>
+                    <th>Intervalo Inferior</th>
+                    <th>Intervalo Superior</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas de datos se agregarán aquí -->
+            </tbody>
+        </table>
+        <button onclick="addRow()">Agregar Fila</button>
+        <button onclick="calculateFrequencies()">Calcular Frecuencias</button>
+        <p id="result">Resultado Promedio: <span id="average-result">---</span></p>
+        <h2>Números Aleatorios Generados</h2>
+        <label for="num-simulations">Número de Simulaciones:</label>
+        <input type="number" id="num-simulations" value="10">
+        <button onclick="montecarloSimulation()">Simulación Montecarlo</button>
+        <table id="resultados-table">
+            <thead>
+                <tr>
+                    <th>Número Aleatorio</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Resultados se mostrarán aquí -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
